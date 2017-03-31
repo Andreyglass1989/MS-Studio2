@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block active_menu1 %}MuseMenuActive rounded-corners shadow{% endblock active_menu1 %}
+
+{% block title %}{{photos.name}}{% endblock title %}
+
+{% block dop_css %}
+
+<style>
+  #mymy{
+	 	border: 2px solid #3E3E3F;
+	 	margin-top: 50px;
+	 	border-radius: 4px;
+	 }
+
+   #first_otstup{
+    margin-top:110px
+   }
+
+    #font{
+     font-family: 'Tangerine', serif;
+     font-size: 15px;
+    }
+
+  body {background-color:#7f7f7f; !important}
+  .button:focus,.button:hover{background-color:#f68221 !important}
+  .just_button{background-color:#7f7f7f !important}
+
+ </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="{% static 'css/foundation.css' %}">
+
+
+{% endblock dop_css %}
+
+<body id="body">
+{% block content %}
+
+<div id="first_otstup"></div>
+<!-- Slide Show  -->
+<!--    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+		  <ul class="orbit-container">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+<!-- END show slide-->
+              {% for picture in photos %}
+                <!-- <li class="orbit-slide is-active">
+                    <div align="center"><img src="{{ picture.img.url }}" alt="1"/></div>
+                 </li> -->
+                 <li class="orbit-slide">
+		    	  <img class="orbit-image" src="{{ picture.img.url }}" alt="Space"><br/>
+			  	  <!--<span class="orbit-caption"><p>projects</p></span>-->
+		         </li>
+              {% endfor %}
+  <!-- Slide Show  -->
+<!--          </ul>
+		  <nav class="orbit-bullets">
+		    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.{{picture.id}}</span><span class="show-for-sr">Current Slide</span></button>
+		    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+		  </nav>
+    </div>
+-->
+              <!-- END show slide-->
+
+
+<!-- BEGIN Paginations -->
+      <!--      <div class="pagination" align="center">
+                <span class="step-links">
+                    {% if photos.has_previous %}
+                        <a href="?page={{ photos.previous_page_number }}">previous</a>
+                    {% endif %}
+
+                    <span class="current">
+                        Page {{ photos.number }} of {{ photos.paginator.num_pages }}.
+                    </span>
+
+                    {% if photos.has_next %}
+                        <a href="?page={{ photos.next_page_number }}">next</a>
+                    {% endif %}
+                </span>
+            </div> -->
+
+           <div align="center">
+            {% if photos.has_other_pages %}
+              <ul class="pagination">
+                {% if photos.has_previous %}
+                  <li><a href="?page={{ photos.previous_page_number }}">&laquo;</a></li>
+                {% else %}
+                  <li class="disabled"><span>&laquo;</span></li>
+                {% endif %}
+
+                {% for i in photos.paginator.page_range %}
+                  {% if photos.number == i %}
+                    <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                  {% else %}
+                    <li><a href="?page={{ i }}">{{ i }}</a></li>
+                  {% endif %}
+
+                {% endfor %}
+                {% if photos.has_next %}
+                  <li><a href="?page={{ photos.next_page_number }}">&raquo;</a></li>
+                {% else %}
+                  <li class="disabled"><span>&raquo;</span></li>
+                {% endif %}
+              </ul>
+            {% endif %}
+           </div>
+
+
+<!-- END Paginations -->
+<div class="row">
+  <div class="large-12 columns"><a href="../" class="just_button button round" >Назад</a></div>
+</div>
+
+
+    <script src="{% static 'js/foundation/vendor/jquery.js' %}"></script>
+    <script src="{% static 'js/foundation/vendor/foundation.js' %}"></script>
+    <script src="{% static 'js/foundation/vendor/foundation.orbit.js' %}"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+{% endblock content %}
+</body>
+
+
