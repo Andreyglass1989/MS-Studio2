@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'projects_home',
+    'design_interera',
+    'public_building',
+    'partner',
 ]
 
 MIDDLEWARE = [

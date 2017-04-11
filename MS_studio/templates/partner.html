@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Partner{% endblock title %}
+
+{% block dop_css %}
+<style>
+
+    #mymy{
+        display: inline-block;
+        margin: 20px 20px 20px 20px;
+	 	margin-top: 10px;
+	 	position: center, center;
+        background-repeat: no-repeate;
+        background-size: cover;
+        padding: 5px 20px 5px 20px;
+}
+
+  #mymy:hover{
+	 	margin-top: 10px;
+        background-repeat: no-repeate;
+        background-size: cover;
+        height: 350px;
+	 }
+
+   #first_otstup {margin-top:150px; margin-bottom:100px;}
+
+   #image{
+        display: inline;
+        width: auto;
+        max-width:220px;
+        height: auto;
+        max-height:220px;
+        vertical-align: middle;
+        margin: 5px 5px 25px 5px;
+     }
+
+
+</style>
+
+{% endblock dop_css %}
+
+{% block active_menu6 %}MuseMenuActive rounded-corners shadow{% endblock active_menu6 %}
+
+
+{% block content %}
+<div id="first_otstup"></div>
+
+<h1 style="text-align:center; font-size:50px">Our partners</h1>
+
+ {% for item in items %}
+        <div id="mymy" class="small-4 columns">
+            <div><img id="image" src="{{ item.img.url }}"/></div>
+      </div>
+
+ {% endfor %}
+
+
+{% endblock content %}

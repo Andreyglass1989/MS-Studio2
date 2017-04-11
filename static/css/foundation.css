@@ -438,8 +438,7 @@ body {
   margin: 0;
   padding: 0;
   background: #7f7f7f;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-seri
   line-height: 1.5;
   color: #0a0a0a;
   -webkit-font-smoothing: antialiased;
@@ -604,7 +603,7 @@ h6 {
     font-size: 1rem; } }
 
 a {
-  line-height: inherit;
+
   color: #2ba6cb;
   text-decoration: none;
   cursor: pointer; }
@@ -627,15 +626,15 @@ ul,
 ol,
 dl {
   margin-bottom: 1rem;
-  list-style-position: outside;
-  line-height: 1.6; }
+
+   }
 
 li {
   font-size: inherit; }
 
 ul {
   margin-left: 1.25rem;
-  list-style-type: disc; }
+  }
 
 ol {
   margin-left: 1.25rem; }

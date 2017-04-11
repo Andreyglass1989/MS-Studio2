@@ -27,5 +27,8 @@ urlpatterns = [
     url(r'^about-ms-studio/$', views.about_ms_studio, name = 'about'),
     url(r'^contacts/$', views.contacts, name = 'contacts'),
     url(r'^projects/', include ('projects_home.urls')),
+    url(r'^design_interera/', include ('design_interera.urls')),
+    url(r'^public/', include ('public_building.urls')),
+    url(r'^partner/', views.partner, name='partner'),
 ]
 urlpatterns +=static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

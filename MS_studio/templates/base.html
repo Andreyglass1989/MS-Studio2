@@ -7,78 +7,140 @@
   <link rel="shortcut icon" href="{% static 'images/ms-studio-favicon.ico' %}"/>
   <title>{% block title %}MS&#45;studio{% endblock title %}</title>
   <!-- CSS -->
+  {% block dop_css %}{% endblock dop_css %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/site_global.css' %}"/>
   <link rel="stylesheet" type="text/css" href="{% static 'css/master_______-a.css' %}"/>
-  <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/new_menu.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
 
-  {% block dop_css %}{% endblock dop_css %}
+
+     <style>
+
+#font{
+  font-family: 'Tangerine', serif;
+  font-size: 15px;
+  color: #ffffff;
+  position: absolute;
+  top: 20px;
+  margin-left: 10px;
+}
+
+#u10170 {
+  width: 185px;
+  padding-bottom: 5px;
+  margin-right: -10000px;
+  background-color: #3E3E3F;
+  text-align:center;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: #ffffff;
+  font-family: 'Tangerine', serif;
+  text-color: #ffffff;
+  text-decoration: none;
+
+}
+
+#u10170:hover {
+  width: 188px;
+  min-height: 1px;
+  margin: 0px -9999px 1px 0px;
+}
+
+     </style>
+
+
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
   </script>
  </head>
 
-
-
  <body>
-  <!-- TOP MENU -->
-   <div class="clearfix" id="page"><!-- group -->
-   <div class="clearfix mse_pre_init" id="u95-3"><!-- content -->
+<!-- -->
+ <div class="clearfix" id="page"><!-- group -->
+   <div class="clearfix se_invi" id="u95-3"><!-- content -->
     <p>&nbsp;</p>
    </div>
-    <!--logo-->
-    <a class="nonblock nontext MuseLinkActive clip_frame mse_pre_init" id="u70" href="{% url 'index' %}"><!-- image --><img class="block" id="u70_img" src="{% static 'images/logo_ms_studio.jpg' %}" alt="" width="271" height="64"/></a>
-   <div class="clearfix grpelem" id="u4231-3"><!-- content-->
-    <p>&nbsp;</p>
-   </div>
-    <!--logo-->
+   <a class="nonblock nontext clip_frame se_invi" id="u70" href="{% url 'index' %}"><!-- image --><img class="block" id="u70_img" src="{% static 'images/logo_ms_studio.jpg' %}" alt="" width="271" height="64"/></a>
+   <div class="clearfix grpelem" id="u4231-3"><!-- content --></div>
 
-   <ul class="MenuBar clearfix grpelem" id="menuu1920"><!-- horizontal box -->
-    <li class="MenuItemContainer clearfix grpelem" id="u1945"><!-- vertical box -->
+   <div class="clearfix grpelem" id="pmenuu1920"><!-- group -->
+    <ul class="MenuBar clearfix grpelem" id="menuu1920"><!-- horizontal box -->
      <div class="sbg MenuItem MenuItemWithSubMenu {% block active_menu1 %} {% endblock active_menu1 %}clearfix colelem" id="pu1946"><!-- group -->
-      <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u1946" href="{% url 'index' %}"> <!--horizontal box--> <div class="_u1946 f3s_top" id="_u1946-f3s_top"></div><div class="_u1946 f3s_mid clearfix" id="_u1946-f3s_mid"><img class="MenuItemLabel NoWrap grpelem" id="u1949-4" src="{% static 'images/u1949-4.png' %}" alt="Projects" width="147" height="24"/> <!--rasterized frame --></div><div class="_u1946 f3s_bot" id="_u1946-f3s_bot"></div></a>
-    </div>
 
-     <div class="SubMenu  MenuLevel1 clearfix" id="u1950"><!-- vertical box -->
-      <ul class="SubMenuView rounded-corners clearfix colelem" id="u1951"><!-- vertical box -->
-       <li class="MenuItemContainer clearfix colelem" id="u10077"><!-- horizontal box -->
-        <div class="sbg MenuItem MenuItemWithSubMenu clearfix grpelem" id="pu10078"><!-- group -->
-         <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u10078" href="{% url 'projects_home:projects_house' %}"><!-- horizontal box --><div class="_u10078 f3s_top clearfix" id="_u10078-f3s_top"><img class="MenuItemLabel NoWrap grpelem" id="u10080-4" src="{% static 'images/u10080-4.png' %}" alt="Проекты жилых домов" width="203" height="23"/><!-- rasterized frame --></div></a>
+     <li class="MenuItemContainer clearfix grpelem" id="u1945"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u1946" href="{% url 'index' %}"><!-- horizontal box --><img class="MenuItemLabel NoWrap grpelem" id="u1949-4" width="103" height="24"/><div id="font">Projects</div><!-- rasterized frame --></a>
+      <div class="SubMenu  MenuLevel1 clearfix" id="u1950"><!-- vertical box -->
+       <div class="SubMenuView clearfix colelem" id="u1951"><!-- vertical box -->
+        <div class="position_content" id="u1951_position_content">
+         <a id="u10170" href="{% url 'projects_home:projects_house' %}"><div class="MenuItemContainer clearfix colelem" id="u10169"><!-- horizontal box -->
+          <div class="MenuItem MenuItemWithSubMenu clearfix grpelem" id="u10170"><!-- horizontal box -->
+           <div class="MenuItemLabel NoWrap clearfix grpelem" id="u10172-4"><!-- content -->
+            <p>Проекты жилых домов</p>
+           </div>
+          </div></a>
+         </div>
+         <a id="u10170" href="{% url 'design_interera:design_intr' %}"><div class="MenuItemContainer clearfix colelem" id="u10183"><!-- horizontal box -->
+          <div class="MenuItem MenuItemWithSubMenu clearfix grpelem" id="u10184"><!-- horizontal box -->
+           <div class="MenuItemLabel NoWrap clearfix grpelem" id="u10170"><!-- content -->
+            <p>Дизайн интерьеров</p>
+           </div>
+          </div>
+         </div></a>
+         <a id="u10170" href="{% url 'public_building:building' %}"><div class="MenuItemContainer clearfix colelem" id="u10176"><!-- horizontal box -->
+          <div class="MenuItem MenuItemWithSubMenu clearfix grpelem" id="u10177"><!-- horizontal box -->
+           <div class="MenuItemLabel NoWrap clearfix grpelem" id="u10170"><!-- content -->
+            <p>Проекты общественного</p>
+            <p>назначения</p>
+           </div>
+          </div>
+         </div></a>
         </div>
-       </li>
-       <li class="MenuItemContainer clearfix colelem" id="u10091"><!-- horizontal box -->
-        <div class="sbg MenuItem MenuItemWithSubMenu clearfix grpelem" id="pu10092"><!-- group -->
-         <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u10092" href="{% url 'projects_home:projects_house' %}"><!-- horizontal box --><div class="_u10092 f3s_top clearfix" id="_u10092-f3s_top"><img class="MenuItemLabel NoWrap grpelem" id="u10093-4" src="{% static 'images/u10093-4.png' %}" alt="Дизайн интерьеров" width="203" height="23"/><!-- rasterized frame --></div></a>
-        </div>
-       </li>
-       <li class="MenuItemContainer clearfix colelem" id="u10084"><!-- horizontal box -->
-        <div class="sbg MenuItem MenuItemWithSubMenu clearfix grpelem" id="pu10085"><!-- group -->
-         <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u10085" href="public_projects.html"><!-- horizontal box --><div class="_u10085 f3s_top" id="_u10085-f3s_top"></div><div class="_u10085 f3s_mid clearfix" id="_u10085-f3s_mid"><img class="MenuItemLabel NoWrap grpelem" id="u10086-6" src="{% static 'images/u10086-6.png' %}" alt="Проекты общественного назначения" width="203" height="42"/><!-- rasterized frame --></div><div class="_u10085 f3s_bot" id="_u10085-f3s_bot"></div></a>
-        </div>
-       </li>
-      </ul>
+       </div>
+      </div>
      </div>
-    </li>
-    <li class="MenuItemContainer clearfix grpelem" id="u1931"><!-- vertical box -->
 
-      <div class="sbg MenuItem MenuItemWithSubMenu {% block active_menu2 %} {% endblock active_menu2 %} clearfix colelem" id="pu1934"><!-- group -->
-       <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u1934" href="{% url 'about' %}"><!-- horizontal box --><div class="_u1934 f3s_top" id="_u1934-f3s_top"></div><div class="_u1934 f3s_mid clearfix" id="_u1934-f3s_mid"><img class="MenuItemLabel NoWrap grpelem" id="u1935-4" src="{% static 'images/u1935-4.png' %}" alt="About" width="147" height="24"/><!-- rasterized frame --></div><div class="_u1934 f3s_bot" id="_u1934-f3s_bot"></div></a>
-     </div>
-    </li>
 
-    <li class="MenuItemContainer clearfix grpelem" id="u1938"><!-- vertical box -->
-     <div class="sbg MenuItem MenuItemWithSubMenu {% block active_menu3 %} {% endblock active_menu3 %} clearfix colelem" id="pu1941"><!-- group -->
-      <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u1941" href="{% url 'contacts' %}"><!-- horizontal box --><div class="_u1941 f3s_top" id="_u1941-f3s_top"></div><div class="_u1941 f3s_mid clearfix" id="_u1941-f3s_mid"><img class="MenuItemLabel NoWrap grpelem" id="u1944-4" src="{% static 'images/u1944-4.png' %}" alt="Contacts" width="147" height="24"/><!-- rasterized frame --></div><div class="_u1941 f3s_bot" id="_u1941-f3s_bot"></div></a>
-     </div>
-    </li>
-   </ul>
-     <!--logo-->
-   <div class="clip_frame mse_pre_init" id="u75"><!-- image -->
+     </li>
+<!--About -->
+     <li class="MenuItemContainer clearfix grpelem" id="u1931"><!-- vertical box -->
+      <div class="sbg MenuItem MenuItemWithSubMenu {% block active_menu3 %} {% endblock active_menu3 %} clearfix colelem" id="pu1941">
+      <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u1941" href="{% url 'about' %}"><!-- horizontal box --><img class="MenuItemLabel NoWrap grpelem" id="u1935-4" width="103" height="24"/><div id="font">About</div><!-- rasterized frame --><div class="_u1941 f3s_bot" id="_u1941-f3s_bot"></div></a>
+      </div>
+     </li>
+<!--About -->
+<!--Contacts-->
+     <li class="MenuItemContainer clearfix grpelem" id="u1938"><!-- vertical box -->
+      <div class="sbg MenuItem MenuItemWithSubMenu {% block active_menu4 %} {% endblock active_menu4 %} clearfix colelem" id="pu1941"><!-- group -->
+      <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u1941" href="{% url 'contacts' %}"><!-- horizontal box --><img class="MenuItemLabel NoWrap grpelem" id="u1944-4" width="103" height="24"/><div id="font">Contacts</div><div class="_u1941 f3s_bot" id="_u1941-f3s_bot"></div></a><!-- rasterized frame -->
+      </div>
+     </li>
+<!--Contacts-->
+
+     <li class="MenuItemContainer clearfix grpelem" id="u10135"><!-- vertical box -->
+      <div class="sbg MenuItem MenuItemWithSubMenu {% block active_menu5 %} {% endblock active_menu5 %} clearfix colelem" id="pu1941">
+          <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u1941" href="#"><!-- horizontal box --><img class="MenuItemLabel NoWrap grpelem" id="u10137-4" width="103" height="24"/><div id="font">Prices</div><!-- rasterized frame --><div class="_u1941 f3s_bot" id="_u1941-f3s_bot"></div></a>
+      </div>
+     </li>
+
+
+     <li class="MenuItemContainer clearfix grpelem" id="u10142"><!-- vertical box -->
+      <div class="sbg MenuItem MenuItemWithSubMenu {% block active_menu6 %} {% endblock active_menu6 %} clearfix colelem" id="pu1941">
+          <a class="nonblock nontext rounded-corners grpelem shadow rgba-background" id="u1941" href="{% url 'partner'%}"><!-- horizontal box --><img class="MenuItemLabel NoWrap grpelem" id="u10147-4" width="103" height="24"/><div id="font">Partners</div><!-- rasterized frame --><div class="_u1941 f3s_bot" id="_u1941-f3s_bot"></div></a>
+      </div>
+     </li>
+
+    </ul>
+
+          </div>
+
+
+   <div class="clip_frame se_invi" id="u75"><!-- image -->
     <img class="block" id="u75_img" src="{% static 'images/pasted%20image%20326x226.jpg' %}" alt="" width="147" height="102"/>
    </div>
-  <!-- <div class="verticalspacer"></div>
-     <!--logo-->
-    <!-- END TOP MENU -->
+   <div class="verticalspacer"></div>
+
+
 {% block content %}{% endblock content %}
 
 
@@ -114,4 +176,3 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
   </script>
  </body>
 </html>
-

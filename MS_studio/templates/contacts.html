@@ -1,20 +1,54 @@
 {% extends "base.html" %}
 
 {% load static %}
- {% block dop_css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/contacts.css' %}" id="pagesheet"/>
+
+
+{% block active_menu4 %}MuseMenuActive rounded-corners shadow{% endblock active_menu4 %}
+
+
+{% block dop_css %}
+
+<style>
+#u1033 {
+	z-index: 157;
+	width: 757px;
+	margin-top: -200px;
+	margin-left: 455px;
+}
+
+#ppu4231-3 {
+	width: 0.01px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 170px;
+	left: 64px;
+}
+
+#pu4231-3,#pu1946,#pu1934,#pu1941 {
+	width: 0.01px;
+	position: relative;
+}
+
+#u1032-17
+{
+	z-index: 140;
+	width: 425px;
+	min-height: 219px;
+	font-size: 18px;
+	line-height: 22px;
+	font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	position: relative;
+	margin-right: -10000px;
+}
+
+</style>
+
 
 {% endblock dop_css %}
 
-{% block active_menu3 %}MuseMenuActive rounded-corners shadow{% endblock active_menu3 %}
-
 
 {% block content %}
-
-   <div class="clearfix" id="page"><!-- group -->
-   <div class="clearfix mse_pre_init" id="u95-3"><!-- content -->
-    <p>&nbsp;</p>
-   </div>
 
    <div class="clearfix grpelem" id="ppu4231-3"><!-- column -->
     <div class="clearfix colelem" id="pu4231-3"><!-- group -->
@@ -23,55 +57,23 @@
       <p>&nbsp;</p>
       <p>Украина, Одесса, ул. Маяковского 10</p>
       <p>&nbsp;</p>
-      <p>067 &#45;92&#45;66&#45;865</p>
+      <p>067&#45;92&#45;66&#45;865</p>
       <p>095&#45;048&#45;15&#45;42</p>
       <p>063&#45;839&#45;79&#45;68</p>
       <p>&nbsp;</p>
       <p>email: daimonsv@rambler.ru</p>
-     </div>
-    </div>
-    <form class="form-grp clearfix colelem" id="widgetu115" method="post" enctype="multipart/form-data" action="scripts/form-u115.php"><!-- none box -->
-     <div class="fld-grp clearfix grpelem" id="widgetu116" data-required="true"><!-- none box -->
-      <label class="fld-label actAsDiv clearfix grpelem" id="u117-4" for="widgetu116_input"><!-- content -->
-       <span class="actAsPara">Имя:</span>
-      </label>
-      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u120-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu116_input" name="custom_U116" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu116_prompt" for="widgetu116_input"><span class="actAsPara">Ваше имя</span></label></span>
-     </div>
-     <div class="fld-grp clearfix grpelem" id="widgetu121" data-required="true" data-type="email"><!-- none box -->
-      <label class="fld-label actAsDiv clearfix grpelem" id="u123-4" for="widgetu121_input"><!-- content -->
-       <span class="actAsPara">Электронная почта:</span>
-      </label>
-      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u124-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu121_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu121_prompt" for="widgetu121_input"><span class="actAsPara">name@email.com</span></label></span>
-     </div>
-     <div class="clearfix grpelem" id="u132-4"><!-- content -->
-      <p>Отправка формы…</p>
-     </div>
-     <div class="clearfix grpelem" id="u126-4"><!-- content -->
-      <p>На сервере произошла ошибка.</p>
-     </div>
-     <div class="clearfix grpelem" id="u133-4"><!-- content -->
-      <p>Форма получена.</p>
-     </div>
-     <input class="submit-btn NoWrap grpelem" id="u148-17" type="submit" value="" tabindex="5"/><!-- state-based BG images -->
-     <div class="fld-grp clearfix grpelem" id="widgetu127" data-required="false"><!-- none box -->
-      <label class="fld-label actAsDiv clearfix grpelem" id="u128-4" for="widgetu127_input"><!-- content -->
-       <span class="actAsPara">Сообщение:</span>
-      </label>
-      <span class="fld-textarea actAsDiv clearfix grpelem" id="u130-4"><!-- content --><textarea class="wrapped-input" id="widgetu127_input" name="custom_U127" tabindex="3"></textarea><label class="wrapped-input fld-prompt" id="widgetu127_prompt" for="widgetu127_input"><span class="actAsPara">Добавить краткое сообщение…</span></label></span>
-     </div>
-     <div class="fld-grp clearfix grpelem" id="widgetu153" data-required="true"><!-- none box -->
-      <label class="fld-label actAsDiv clearfix grpelem" id="u157-4" for="widgetu153_input"><!-- content -->
-       <span class="actAsPara">Сотовый телефон:</span>
-      </label>
-      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u156-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu153_input" name="custom_U153" tabindex="4"/><label class="wrapped-input fld-prompt" id="widgetu153_prompt" for="widgetu153_input"><span class="actAsPara">Введите Ваш номер телефона</span></label></span>
-     </div>
-    </form>
-   </div>
-
- <!--<div class="clearfix grpelem" id="pmenuu1920"> </div>column -->
-    <div class="clip_frame colelem" id="u1033"><!-- image -->
+          <div class="clip_frame colelem" id="u1033"><!-- image -->
      <img class="block" id="u1033_img" src="{% static 'images/google%20maps.jpg' %}" alt="" width="757" height="461"/>
     </div>
+     </div>
+     <!--<div class="clearfix grpelem" id="pmenuu1920"> </div>column -->
+
+    </div>
+
+
+   </div>
+
+
 
 
 

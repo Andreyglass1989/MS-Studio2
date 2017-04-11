@@ -1,50 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Projects{% endblock title %}
+{% block title %}Design_interera{% endblock title %}
 {% block dop_css %}
 
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float">
-
-<style>
-  #mymy
-    {
-	 	border: 2px solid #3E3E3F;
-	 	margin-top: 10px;
-	 	border-radius: 4px;
-	 	position: center, center;
-        background-repeat: no-repeate;
-        background-size: cover;
-        height: 300px;
-	 }
-
-   #first_otstup {margin-top:70px; margin-bottom:100px;}
-
-   #image{margin-top:5px;}
-
-    #font
-    {
-     font-family: 'Tangerine', serif;
-     font-size: 12px;
-    }
-
-  body {background-color:#7f7f7f; !important}
-
- </style>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<link rel="stylesheet" href="{% static 'css/foundation.css' %}">
-
-<!-- Optional theme -->
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="{% static 'css/second_list.css' %}">
 {% endblock dop_css %}
 {% block active_menu1 %}MuseMenuActive rounded-corners shadow{% endblock active_menu1 %}
 
@@ -56,15 +16,9 @@
  {% for item in items %}
     <a href="{{item.id}}">
         <div id="mymy" class="small-4 columns">
-            <div class="small-12 columns" id="image">
-                <img src="{{ item.image.url }}" alt="{{ item.name }}" width="356px", height="223px"/>
-            </div>
-            <div class="small-12 columns">
-                <p>{{ item.location}}</p>
-            </div>
-            <div class="small-12 columns" id="font">
-                <p>{{ item.name }}</p>
-            </div>
+            <div><img id="image" src="{{ item.image.url }}" alt="{{ item.name }}"/></div>
+            <div class="small-12 columns" id="font2">{{ item.location}}</div>
+            <div class="small-12 columns" id="font2"> <b>{{ item.name }}</b></div>
         </div>
     </a>
  {% endfor %}

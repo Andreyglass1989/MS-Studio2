@@ -3,7 +3,7 @@ from projects_home.models import Project, Gallery, Rozdel
 
 # Register your models here.
 class ImageAdmin(admin.ModelAdmin):
-    list_display = ('name','location', 'name_rozdela', 'image_img', )
+    list_display = ('name','location', 'image_img', )
 
 
 class ImageAdmin_item(admin.ModelAdmin):
