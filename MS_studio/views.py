@@ -10,6 +10,12 @@ def about_ms_studio ( request ):
 def contacts (request):
     return render(request, 'contacts.html' )
 
+def price( request ):
+    return render(request,'price1.html')
+
 def partner( request ):
     items = Gallery.objects.all()
     return render(request,'partner.html', locals())
+
+def menu( request ):
+    return render(request,'base.html')

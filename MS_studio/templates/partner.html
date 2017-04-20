@@ -3,6 +3,7 @@
 {% load static %}
 
 {% block title %}Partner{% endblock title %}
+{% block active_in_menu_PARTNER %}class="active"{% endblock active_in_menu_PARTNER %}
 
 {% block dop_css %}
 <style>
@@ -41,17 +42,17 @@
 
 {% endblock dop_css %}
 
-{% block active_menu6 %}MuseMenuActive rounded-corners shadow{% endblock active_menu6 %}
+{% block active_in_menu_PARTNERS %}class="active"{% endblock active_in_menu_PARTNERS %}
 
 
 {% block content %}
-<div id="first_otstup"></div>
+<div style="margin-top:50px"></div>
 
 <h1 style="text-align:center; font-size:50px">Our partners</h1>
 
  {% for item in items %}
         <div id="mymy" class="small-4 columns">
-            <div><img id="image" src="{{ item.img.url }}"/></div>
+            <div><a href="#"><img  id="image" src="{{ item.img.url }}"/></a></div>
       </div>
 
  {% endfor %}

@@ -3,81 +3,33 @@
 {% load static %}
 
 
-{% block active_menu4 %}MuseMenuActive rounded-corners shadow{% endblock active_menu4 %}
+{% block title %}Contacts{% endblock title %}
 
 
 {% block dop_css %}
 
 <style>
-#u1033 {
-	z-index: 157;
-	width: 757px;
-	margin-top: -200px;
-	margin-left: 455px;
-}
-
-#ppu4231-3 {
-	width: 0.01px;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 170px;
-	left: 64px;
-}
-
-#pu4231-3,#pu1946,#pu1934,#pu1941 {
-	width: 0.01px;
-	position: relative;
-}
-
-#u1032-17
-{
-	z-index: 140;
-	width: 425px;
-	min-height: 219px;
-	font-size: 18px;
-	line-height: 22px;
-	font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
-	font-weight: normal;
-	position: relative;
-	margin-right: -10000px;
-}
-
+    p{font-size:18px}
 </style>
-
 
 {% endblock dop_css %}
 
+{% block active_in_menu_CONTACTS %}class="active"{% endblock active_in_menu_CONTACTS %}
+
 
 {% block content %}
-
-   <div class="clearfix grpelem" id="ppu4231-3"><!-- column -->
-    <div class="clearfix colelem" id="pu4231-3"><!-- group -->
-      <div class="clearfix grpelem" id="u1032-17"><!-- content -->
-      <p>Маркова Светлана, Архитектор</p>
-      <p>&nbsp;</p>
-      <p>Украина, Одесса, ул. Маяковского 10</p>
-      <p>&nbsp;</p>
-      <p>067&#45;92&#45;66&#45;865</p>
-      <p>095&#45;048&#45;15&#45;42</p>
-      <p>063&#45;839&#45;79&#45;68</p>
-      <p>&nbsp;</p>
-      <p>email: daimonsv@rambler.ru</p>
-          <div class="clip_frame colelem" id="u1033"><!-- image -->
-     <img class="block" id="u1033_img" src="{% static 'images/google%20maps.jpg' %}" alt="" width="757" height="461"/>
+    <div style="margin: 0px 10px 0px 15px; float:left;">
+     <p>Маркова Светлана, Архитектор</p>
+        <p style="margin-top:10px"></p>
+     <p>Украина, Одесса, ул. Маяковского 10</p>
+        <p style="margin-top:10px"></p>
+     <p>067&#45;92&#45;66&#45;865</p>
+     <p>095&#45;048&#45;15&#45;42</p>
+     <p>063&#45;839&#45;79&#45;68</p>
+        <p style="margin-top:10px"></p>
+     <p>email: daimonsv@rambler.ru</p>
     </div>
-     </div>
-     <!--<div class="clearfix grpelem" id="pmenuu1920"> </div>column -->
-
-    </div>
-
-
-   </div>
-
-
-
-
-
-
+<div style="display:inline-block; float:right;">
+  <img src="{% static 'images/google%20maps.jpg' %}" width="757" height="461">
+</div>
 {% endblock content %}
-
-

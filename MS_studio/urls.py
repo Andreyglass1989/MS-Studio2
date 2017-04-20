@@ -29,6 +29,9 @@ urlpatterns = [
     url(r'^projects/', include ('projects_home.urls')),
     url(r'^design_interera/', include ('design_interera.urls')),
     url(r'^public/', include ('public_building.urls')),
+    url(r'^price/', views.price, name='price'),
     url(r'^partner/', views.partner, name='partner'),
+    url(r'^menu/', views.menu, name='menu'),
+
 ]
 urlpatterns +=static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
