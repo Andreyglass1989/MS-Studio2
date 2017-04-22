@@ -5,4 +5,5 @@ local_settings.py
 .idea/
 __pycache__
 venv
-/static_files/*
+/.static_files/
+YANDEX-BROWSER-KEY.GPG
