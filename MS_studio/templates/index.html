@@ -5,47 +5,59 @@
 {% block title %}MS-studio{% endblock title %}
 
 {% block dop_css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" id="pagesheet"/>
 
 {% endblock dop_css %}
+
+{% block dop_script %}
+
+<script src="{% static 'js/jquery.js' %}"></script>
+
+{% endblock dop_script %}
+
 
 {% block active_menu1 %}{% endblock active_menu1 %}
 
 
 {% block content %}
 
-   <div class="SlideShowWidget clearfix grpelem" id="slideshowu546"><!-- none box -->
-    <div class="popup_anchor" id="u553popup">
-     <div class="SlideShowContentPanel clearfix" id="u553"><!-- stack box -->
-      <a class="nonblock nontext SSSlide invi clip_frame clearfix grpelem" id="u10282" href="{% url 'projects_home:projects_house'  %}"><!-- image --><div id="u10282_clip"><img class="ImageInclude position_content" id="u10282_img" data-src="{% static 'images/14.jpg' %}" src="{% static 'images/blank.gif' %}" alt="" data-width="1280" data-height="577"/></div></a>
-      <a class="nonblock nontext SSSlide invi clip_frame clearfix grpelem" id="u5157" href="{% url 'design_interera:design_intr' %}"><!-- image --><div id="u5157_clip"><img class="ImageInclude position_content" id="u5157_img" data-src="{% static 'images/a.jpg' %}" src="{% static 'images/blank.gif' %}" alt="" data-width="1280" data-height="801"/></div></a>
-      <a class="nonblock nontext SSSlide invi clip_frame clearfix grpelem" id="u5169" href="{% url 'public_building:building' %}"><!-- image --><div id="u5169_clip"><img class="ImageInclude position_content" id="u5169_img" data-src="{% static 'images/1.jpg' %}" src="{% static 'images/blank.gif' %}" alt="" data-width="1280" data-height="577"/></div></a>
-     </div>
+<div id="carousel" class="carousel slide">
+
+    <!-- indicators slides-->
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+<!-- slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{% static 'images/14.jpg' %}" alt="" height="577px">
+            <div class="carousel-caption">
+                <h3>ПРОЕКТЫ ЖИЛЫХ ДОМОВ</h3>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'images/a.jpg' %}" alt="" height="577px">
+            <div class="carousel-caption">
+                <h3>ДИЗАЙН ИНТЕРЬЕРА</h3>
+            </div>
+        </div>
+        <div class="item" style="height:577px">
+            <img src="{% static 'images/1.jpg' %}" alt="" height="577px">
+            <div class="carousel-caption">
+                <h3>ПРОЕКТЫ ОБЩЕСТВЕННОГО НАЗНАЧЕНИЯ</h3>
+            </div>
+        </div>
     </div>
-    <div class="popup_anchor" id="u548popup">
-     <div class="SlideShowCaptionPanel clearfix" id="u548"><!-- stack box -->
-      <div class="SSSlideCaption clearfix grpelem" id="u5163-4"><!-- content -->
-       <p>ПРОЕКТЫ ЖИЛЫХ ДОМОВ</p>
-      </div>
-      <div class="SSSlideCaption invi clearfix grpelem" id="u5163-4"><!-- content -->
-       <p>ДИЗАЙН ИНТЕРЬЕРОВ</p>
-      </div>
-      <div class="SSSlideCaption invi clearfix grpelem" id="u5175-4"><!-- content -->
-       <p>ПРОЕКТЫ ОБЩЕСТВЕННОГО НАЗНАЧЕНИЯ</p>
-      </div>
-     </div>
-    </div>
-      <div class="popup_anchor" id="u547-5popup">
-       <div class="SlideShowLabel SSSlideCount rounded-corners clearfix" id="u547-5"><!-- content -->
-        <p><span id="u547">2</span><span id="u547-2">&nbsp;&#45; 23</span></p>
-       </div>
-      </div>
-      <div class="popup_anchor" id="u561-4popup">
-       <a class="nonblock nontext SSPreviousButton clearfix" id="u561-4" href="#"><p>&lt;</p></a>
-      </div>
-      <div class="popup_anchor" id="u552-4popup">
-       <a class="nonblock nontext SSNextButton clearfix" id="u552-4" href="#"><p>&gt;</p></a>
-      </div>
-   </div>
+<!-- Стрелки переключения слайдов -->
+    <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+
 
 {% endblock content %}

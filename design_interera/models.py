@@ -5,6 +5,9 @@ from projects_home.models import Rozdel
 
 
 class Interer( models.Model ):
+    class Meta:
+        verbose_name = "ДИЗАЙН ИНТЕРЬЕРА"
+        verbose_name_plural = "дизайны интерьеров"
     name = models.TextField(verbose_name=u'Название итерьера', max_length=255, help_text='имя интерьера')
     location = models.CharField(verbose_name=u'Местоположение', max_length=255)
     name_rozdela = models.ForeignKey(Rozdel, verbose_name=u'Имя раздела')
@@ -23,6 +26,9 @@ class Interer( models.Model ):
     image_img.allow_tags = True
 
 class Gallery_design_interera (models.Model):
+    class Meta:
+        verbose_name = "ГАЛЕРЕЮ ДИЗАЙНА ИНТЕРЬЕРА"
+        verbose_name_plural = "Галерея дизайна интерьеров"
     project = models.ForeignKey(Interer)
     img = models.ImageField(upload_to='design_interera')
 

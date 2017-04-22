@@ -3,7 +3,11 @@ from __future__ import unicode_literals
 from django.db import models
 
 class Gallery(models.Model):
-    img = models.ImageField(upload_to = 'partner')
+    class Meta:
+        verbose_name = "ЛОГОТИП ПАРТНЕРОВ"
+        verbose_name_plural = "Логотипы партнеров"
+    img = models.ImageField(upload_to = 'partner', verbose_name="картинка/логотип")
+    link = models.CharField(max_length=255, verbose_name="ссылка")
 
     def image_img(self):
         if self.img:

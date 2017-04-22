@@ -11,7 +11,7 @@ def contacts (request):
     return render(request, 'contacts.html' )
 
 def price( request ):
-    return render(request,'price1.html')
+    return render(request,'price.html')
 
 def partner( request ):
     items = Gallery.objects.all()

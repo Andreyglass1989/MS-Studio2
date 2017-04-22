@@ -1,0 +1,110 @@
+.html
+{
+	background-color: #7F7F7F;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1280px;
+	min-height: 438px;
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	padding-bottom: 62px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u10080-55
+{
+	z-index: 2;
+	width: 824px;
+	min-height: 540px;
+	background-color: #3E3E3F;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 137px;
+	left: 10px;
+}
+
+#u10080-3
+{
+	font-size: 18px;
+	text-align: left;
+	text-indent: 10px;
+	padding-right: 5px;
+	padding-left: 2px;
+	padding-top: 5px;
+	color: #FFFFFF;
+	font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+	line-height: 0px;/* 0 for mixed font sized paras; applied on spans instead */
+}
+
+#u10080
+{
+	line-height: 22px;
+}
+
+#u10080-2
+{
+	font-size: 16px;
+	line-height: 19px;
+}
+
+#u10080-4,#u10080-6,#u10080-7,#u10080-9,#u10080-10,#u10080-12,#u10080-14,#u10080-15,#u10080-16,#u10080-18,#u10080-20,#u10080-22,#u10080-24,#u10080-26,#u10080-28,#u10080-29,#u10080-31,#u10080-32,#u10080-33,#u10080-35,#u10080-36,#u10080-37,#u10080-39,#u10080-41,#u10080-43,#u10080-45,#u10080-47,#u10080-49,#u10080-51,#u10080-52
+{
+	font-size: 16px;
+	text-align: justify;
+	line-height: 19px;
+	text-indent: 10px;
+	padding-right: 5px;
+	padding-left: 2px;
+	padding-top: 5px;
+	color: #FFFFFF;
+	font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+}
+
+#u10078
+{
+	z-index: 57;
+	width: 403px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 137px;
+	left: 852px;
+}
+
+#u10078_img
+{
+	padding-bottom: 1px;
+}
+
+#u9111
+{
+	z-index: 129;
+	width: 403px;
+	position: relative;
+	margin-right: -10000px;
+	left: 855px;
+	top: 137px;
+}
+
+#u9111_img
+{
+	padding-bottom: 1px;
+}
+
+body
+{
+	padding-top: 0px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

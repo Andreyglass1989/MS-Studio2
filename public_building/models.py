@@ -5,6 +5,9 @@ from projects_home.models import Rozdel
 
 
 class Building ( models.Model ):
+    class Meta:
+        verbose_name = "ПРОЕКТ ОБЩ. НАЗНАЧ."
+        verbose_name_plural = "Проеты общественного назначения"
     name = models.TextField(verbose_name=u'Имя проекта', max_length=255, help_text='название проекта')
     location = models.CharField(verbose_name=u'Местоположение', max_length=255)
     name_rozdela = models.ForeignKey(Rozdel, verbose_name=u'Имя проекта')
@@ -22,6 +25,9 @@ class Building ( models.Model ):
     image_img.allow_tags = True
 
 class Gallery_building ( models.Model ):
+    class Meta:
+        verbose_name = "ГАЛЕРЕЮ ПР-ОВ ОБЩ. НАЗНАЧ."
+        verbose_name_plural = "Галерия проетов общественного назначения"
     project = models.ForeignKey ( Building )
     img = models.ImageField ( upload_to = 'public_building' )
 

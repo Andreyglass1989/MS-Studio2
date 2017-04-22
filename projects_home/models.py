@@ -11,6 +11,9 @@ class Rozdel( models.Model ):
 
 
 class Project( models.Model ):
+    class Meta:
+        verbose_name = "ПРОЕКТ ЖИЛОГО ДОМА"
+        verbose_name_plural = "Проекты жилых домов"
     name = models.TextField(verbose_name=u'Имя проекта', max_length=255, help_text='название проекта')
     location = models.CharField(verbose_name=u'Местоположение', max_length=255)
     name_rozdela = models.ForeignKey(Rozdel, verbose_name=u'Имя проекта')
@@ -28,6 +31,9 @@ class Project( models.Model ):
     image_img.allow_tags = True
 
 class Gallery(models.Model):
+    class Meta:
+        verbose_name = "ГАЛЕРЕЮ ПРОЕКТА ЖИЛОГО ДОМА"
+        verbose_name_plural = "Галерея проектов жилых домов"
     project = models.ForeignKey(Project)
     img = models.ImageField(upload_to = 'static/images/projects_home')
 
