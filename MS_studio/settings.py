@@ -145,3 +145,6 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/static/media/'
 MEDIA_ROOT = '/root/django/MS_studio/static/media/'
+
+
+###hello
