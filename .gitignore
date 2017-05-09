@@ -4,7 +4,7 @@
 .idea/
 __pycache__
 venv
-*MS_studio
+/MS_studio/
 /.static_files/
 YANDEX-BROWSER-KEY.GPG
 MS_studio/settings.py
