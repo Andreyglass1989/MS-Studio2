@@ -5,5 +5,11 @@ local_settings.py
 .idea/
 __pycache__
 venv
+/MS_studio/
 /.static_files/
 YANDEX-BROWSER-KEY.GPG
+settings.py
+
+/MS_studio/uwsgi.ini
+/MS_studio/wsgi.py
+

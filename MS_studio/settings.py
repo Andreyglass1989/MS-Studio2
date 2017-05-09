@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'design_interera',
     'public_building',
     'partner',
+    'MS_studio',
 ]
 
 MIDDLEWARE = [
@@ -138,7 +139,7 @@ STATICFILES_FINDERS = ("django.contrib.staticfiles.finders.FileSystemFinder",
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/root/django/MS_studio/static',
+
 
 ]
 
